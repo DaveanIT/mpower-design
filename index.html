@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile View Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* Mobile-Only Styling, applied across all devices */
+        body {
+            font-family: Roboto;
+            background-color: #f9f9f9;
+        }
+
+        /* Set a max-width for the container to simulate mobile width on desktop */
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .admin {
+            display: flex;
+            align-items: center;
+        }
+
+        .logout-icon {
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .card-header {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: .20rem 1.25rem;
+        }
+
+        .table td {
+            font-size: 0.9rem;
+            color: #333;
+            padding: 0 .4rem 0 .4rem;
+        }
+
+        .table td.text-right {
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 0.5rem 0;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .hhd{
+            padding: .20rem .2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="text-primary h5">THAYILLAM</h1>
+            <div class="admin">
+                <span class="text-muted small">Admin</span>
+                <span class="ml-2 text-primary logout-icon">🔓</span>
+            </div>
+        </div>
+
+        <!-- Menu Button -->
+        <div class="text-right mb-3">
+            <button class="btn btn-outline-primary btn-sm">Menu</button>
+        </div>
+
+        <!-- Opportunities Table -->
+        <div class="card mb-3">
+            <div class="hhd" style="display: flex;">
+                <div class="bg-success text-white text-center" style=" min-width: 50%; font-family: ;">
+                    Opportunities
+                </div>
+                <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
+                
+                </div>
+            </div>        
+            <table class="table table-borderless table-sm mb-0">
+                <tbody>
+                    <tr>
+                        <td>Open Orders</td>
+                        <td class="text-right">20</td>
+                    </tr>
+                    <tr>
+                        <td>Open Order Value</td>
+                        <td class="text-right">12,350</td>
+                    </tr>
+                    <tr>
+                        <td>Back Order Value</td>
+                        <td class="text-right">12,405</td>
+                    </tr>
+                    <tr>
+                        <td>Back Order Items #</td>
+                        <td class="text-right">35</td>
+                    </tr>
+                    <tr>
+                        <td>Open Quotations Value</td>
+                        <td class="text-right">1,23,506</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Purchases Table -->
+        <div class="card mb-3">
+            <div class="hhd" style="display: flex;">
+                <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
+                
+                </div>
+                <div class="bg-info text-white text-center" style=" min-width: 50%;">
+                    Purchases
+                </div>
+            </div>
+            <table class="table table-borderless table-sm mb-0">
+                <tbody>
+                    <tr>
+                        <td>Open Purchase Order</td>
+                        <td class="text-right">12,305.0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Invoices Payable</td>
+                        <td class="text-right">23,451.0</td>
+                    </tr>
+                    <tr>
+                        <td>Payable Amt Due</td>
+                        <td class="text-right">3,451.0</td>
+                    </tr>
+                    <tr>
+                        <td>Next Payable Dt</td>
+                        <td class="text-right"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cashflow Table -->
+        <div class="card mb-3">
+            <div class="hhd" style="display: flex;">
+                <div class="bg-danger text-white text-center" style=" min-width: 50%;">
+                    Cashflow
+                </div>
+                <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                
+                </div>
+            </div>
+            <table class="table table-borderless table-sm mb-0">
+                <tbody>
+                    <tr>
+                        <td>Total Receivables</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Payables</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>Receivables Today</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>Payables Today</td>
+                        <td class="text-right"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-3">
+            <p class="text-muted small"><img src="img/davean_Business_Logo_final.png" alt="" height="20px"></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional for interactivity) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
