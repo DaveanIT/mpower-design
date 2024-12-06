@@ -1,0 +1,64 @@
+     /* Fit the content to the full width of the display */
+     html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .container-fluid {
+        width: 98vw; /* Full width of the viewport */
+        height: 98vh; /* Full height of the viewport */
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: #e5eef9;
+        border: 1px dotted #8d8484;
+        border-radius: 10px;
+    }
+
+    .hdd{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .search-bar {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .table-container {
+        overflow-x: auto;
+        height: calc(100vh - 200px); /* Adjust table height dynamically */
+    }
+
+    .table thead th {
+        background-color: #f1f1f1;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #e9ecef;
+    }
+
+    /* Style for the hover effect when the row is selected */
+    .selected-row {
+        background-color: #1e7cda !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+       
+
+        .search-bar {
+            max-width: 100%;
+        }
+
+        .table-container {
+            height: calc(100vh - 250px); /* Adjust height for mobile view */
+        }
+    }

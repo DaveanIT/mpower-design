@@ -1,0 +1,85 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+
+/* Header styling */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.header h1 {
+    margin: 0;
+}
+.admin span {
+    display: flex;
+    align-items: center;
+}
+/* Centralize the container and ensure grid is centered */
+.container.mt-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+    gap: 12px; /* Space between buttons */
+    justify-items: center; /* Center each button */
+    max-width: 500px; /* Adjust to your desired width */
+    margin: 0 auto; /* Center the container within the page */
+}
+
+/* If the last button is the only one in the row, span it across both columns */
+.container.mt-4 .custom-button:last-child:nth-child(odd) {
+    grid-column: span 2; /* Make the last button span across the two columns */
+}
+
+/* Button styling */
+.custom-button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 140px; /* Fixed width for consistent size */
+}
+
+/* Hover effect */
+.custom-button:hover {
+    color: #0088ff;
+}
+
+/* Active effect */
+.custom-button:active {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 89, 255, 0.5);
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

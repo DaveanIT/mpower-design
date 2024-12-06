@@ -1,6 +1,6 @@
-  /* Mobile-Only Styling, applied across all devices */
-  body {
-    font-family: Arial, sans-serif;
+/* Mobile-Only Styling, applied across all devices */
+body {
+    font-family: Roboto;
     background-color: #f9f9f9;
 }
 
@@ -28,11 +28,13 @@ h1 {
 .card-header {
     font-size: 1rem;
     font-weight: bold;
+    padding: .20rem 1.25rem;
 }
 
 .table td {
     font-size: 0.9rem;
     color: #333;
+    padding: 0 .4rem 0 .4rem;
 }
 
 .table td.text-right {
@@ -43,4 +45,7 @@ footer {
     padding: 0.5rem 0;
     font-size: 0.8rem;
     color: #666;
+}
+.hhd{
+    padding: .20rem .2rem;
 }
