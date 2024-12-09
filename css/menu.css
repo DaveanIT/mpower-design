@@ -8,7 +8,7 @@ body {
     inset: 0;
     height: 100%;
     width: 100%;
-    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-image: radial-gradient(#b6b7ba 1px, transparent 1px);
     background-size: 16px 16px;
 }
 
@@ -71,6 +71,7 @@ body {
 .custom-button:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 89, 255, 0.5);
+    color: #0088ff;
 }
 
 .purchase{
