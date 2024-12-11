@@ -30,7 +30,7 @@ body {
 .container.mt-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
-    gap: 12px; /* Space between buttons */
+    gap: 21px; /* Space between buttons */
     justify-items: center; /* Center each button */
     max-width: 500px; /* Adjust to your desired width */
     margin: 0 auto; /* Center the container within the page */
@@ -98,4 +98,6 @@ footer {
 nav{
     
     border-bottom: 1px solid #ddd;
+    background-color: white;
 }
+
